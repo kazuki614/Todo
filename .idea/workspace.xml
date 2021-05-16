@@ -2,20 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0225d00-5332-49d1-81c5-836dd0b4e56c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/AllView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/Calendar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8f1e770d-39a5-427c-81b0-41e1105b3887.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/940c37a9-8bea-4f0e-97d2-618e99089389.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c76b48a0-c0b6-4a2f-bd10-486ef1f01b38.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/settings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/css/chunk-vendors.3cd69f59.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/img/logo.63a7d78d.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/about.598f0fbb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/about.598f0fbb.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/app.94971635.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/app.94971635.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/chunk-vendors.1d1fc078.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/chunk-vendors.1d1fc078.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/todo.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/about.a4cad580.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/css/chunk-vendors.a446c9a5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/about.bc6d99f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/about.bc6d99f3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.1a93dcf9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/app.1a93dcf9.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/chunk-vendors.957b83b8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/js/chunk-vendors.957b83b8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AllView.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/Today.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -59,6 +78,7 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -74,17 +94,21 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/frontend/src/components" />
       <recent name="$PROJECT_DIR$/frontend/src/views" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python">
-      <module name="todo" />
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -95,8 +119,9 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,6 +130,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -115,7 +155,18 @@
       <option name="presentableId" value="Default" />
       <updated>1620128714788</updated>
       <workItem from="1620128716071" duration="238000" />
-      <workItem from="1620128970385" duration="70087000" />
+      <workItem from="1620128970385" duration="112349000" />
+      <workItem from="1620807036795" duration="117000" />
+      <workItem from="1620807160633" duration="4994000" />
+      <workItem from="1620814966229" duration="2247000" />
+      <workItem from="1620817248753" duration="339000" />
+      <workItem from="1620817603621" duration="6450000" />
+      <workItem from="1620832113774" duration="59000" />
+      <workItem from="1620832176700" duration="140000" />
+      <workItem from="1620832355975" duration="383000" />
+      <workItem from="1620882507264" duration="27272000" />
+      <workItem from="1621009489166" duration="5138000" />
+      <workItem from="1621049970388" duration="23720000" />
     </task>
     <servers />
   </component>
@@ -144,8 +195,23 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/views/AllView2.vue</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/models/todos.py</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/todo$main.coverage" NAME="main Coverage Results" MODIFIED="1620569437244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1621178895418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>

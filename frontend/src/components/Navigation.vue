@@ -6,7 +6,7 @@
       dark
       clipped
       v-model="drawer"
-      width="15%"
+      width="10%"
       height="100%"
     >
       <v-list dense nav>
@@ -35,10 +35,20 @@ export default {
       value: true,
       items: [
         { link: '/', icon: 'mdi-home', title: 'All', id: 1 },
-        { link: '/today', icon: 'mdi-format-align-left', title: 'Today', id: 2 },
-        { link: '/blast', icon: 'mdi-database-search', title: 'Next 7 Days', id: 3 },
-        { link: '/conversion', icon: 'mdi-file-document-edit', title: 'Calendar', id: 4 }
+        { link: '/All2', icon: 'mdi-format-align-left', title: 'Today', id: 2 },
+        { link: '/seven', icon: 'mdi-database-search', title: 'Next 7 Days', id: 3 },
+        { link: '/calendar', icon: 'mdi-calendar', title: 'Calendar', id: 4 }
       ]
+    }
+  },
+  computed: {
+    drawer: {
+      get () {
+        return this.$store.state.drawer
+      },
+      set (val) {
+        this.$store.commit('setDrawer', val)
+      }
     }
   }
 }
