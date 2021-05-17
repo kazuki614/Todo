@@ -1,44 +1,66 @@
 <template>
   <div>
-    <v-text-field
-      v-model="title"
-      label="TODO"
-      hide-details
-      outlined
-      append-icon="mdi-calendar"
-      @keydown.enter="createTodo({ item: {title: title, due: due} })"
-      @click:append="viewCalendar"
-      rounded
-    ></v-text-field>
-    <v-dialog
-      v-if="view"
-      ref="dialog"
-      v-model="view"
-      :return-value.sync="due"
-      persistent
-      width="290px"
-    >
-      <v-date-picker
-        v-model="due"
-        scrollable
+    <v-row>
+      <v-col
+        cols="12"
+        md="11"
       >
-        <v-spacer></v-spacer>
-        <v-btn
-          text
-          color="primary"
-          @click="view = false"
+        <v-text-field
+          v-model="titleName"
+          label="TODO"
+          hide-details
+          append-icon="mdi-calendar"
+          @keydown.enter="createTodo({ item: {title: titleName, due: dueDate} })"
+          @click:append="viewCalendar"
+          rounded
+          solo
+        ></v-text-field>
+        <v-dialog
+          v-if="view"
+          ref="dialog"
+          v-model="view"
+          :return-value.sync="dueDate"
+          persistent
+          width="290px"
         >
-          Cancel
-        </v-btn>
-        <v-btn
-          text
-          color="primary"
-          @click="$refs.dialog.save(due)"
+          <v-date-picker
+            v-model="dueDate"
+            scrollable
+          >
+            <v-spacer></v-spacer>
+            <v-btn
+              text
+              color="primary"
+              @click="view = false"
+            >
+              Cancel
+            </v-btn>
+            <v-btn
+              text
+              color="primary"
+              @click="$refs.dialog.save(dueDate)"
+            >
+              OK
+            </v-btn>
+          </v-date-picker>
+        </v-dialog>
+      </v-col>
+      <v-col
+        cols="12"
+        md="1"
+      >
+       <v-btn
+         fab
+         dark
+         color="indigo"
+         @click="createTodo({ item: {title: titleName, due: dueDate} })"
         >
-          OK
+          <v-icon dark>
+            mdi-plus
+          </v-icon>
         </v-btn>
-      </v-date-picker>
-    </v-dialog>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -48,8 +70,8 @@ import { mapActions } from 'vuex'
 export default {
   name: 'TodoInput',
   props: {
-    title: { type: String },
-    due: { type: Date },
+    titleName: { type: String },
+    dueDate: { type: Date },
     view: { type: Boolean, default: false }
   },
   methods: {

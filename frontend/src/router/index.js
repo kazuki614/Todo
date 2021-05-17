@@ -19,12 +19,20 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Calendar.vue')
   },
   {
-    path: '/All2',
-    name: 'All2',
+    path: '/today',
+    name: 'today',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AllView2.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Today.vue')
+  },
+  {
+    path: '/week',
+    name: 'week',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Week.vue')
   }
 ]
 

@@ -6,8 +6,8 @@
         md="8"
       >
         <TodoInput
-          :title-name="title"
-          :due-date="date"
+          :title="title"
+          :due="date"
           :view="view"
         ></TodoInput>
         <List
@@ -25,9 +25,7 @@
       <v-col
         cols="12"
         md="4"
-      >
-      <v-divider vertical></v-divider>
-      </v-col>
+      ></v-col>
     </v-row>
   </div>
 </template>
@@ -46,10 +44,22 @@ export default {
   computed: {
     ...mapState(['todos']),
     doingTodos () {
-      return store.getters.doingTodos
+      return store.getters.doingTodos.filter((todo) => {
+        for (let i = 1; i <= this.addDate; i++) {
+          if (todo.due === this.getDate(i)) {
+            return todo
+          }
+        }
+      })
     },
     doneTodos () {
-      return store.getters.doneTodos
+      return store.getters.doneTodos.filter((todo) => {
+        for (let i = 1; i <= this.addDate; i++) {
+          if (todo.due === this.getDate(i)) {
+            return todo
+          }
+        }
+      })
     }
   },
   async beforeRouteEnter (to, from, next) {
@@ -60,7 +70,18 @@ export default {
     selected: [],
     title: '',
     date: '',
-    view: false
-  })
+    view: false,
+    addDate: 7
+  }),
+  methods: {
+    getDate (day) {
+      const date = new Date()
+      date.setDate(date.getDate() + day)
+      const year = date.getFullYear()
+      const month = ('00' + (date.getMonth() + 1)).slice(-2)
+      day = ('00' + date.getDate()).slice(-2)
+      return year + '-' + month + '-' + day
+    }
+  }
 }
 </script>

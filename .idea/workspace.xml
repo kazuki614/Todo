@@ -2,37 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0225d00-5332-49d1-81c5-836dd0b4e56c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/AllView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/Calendar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8f1e770d-39a5-427c-81b0-41e1105b3887.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/940c37a9-8bea-4f0e-97d2-618e99089389.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c76b48a0-c0b6-4a2f-bd10-486ef1f01b38.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/todo.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/css/about.a4cad580.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/css/chunk-vendors.a446c9a5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/about.bc6d99f3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/about.bc6d99f3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/app.1a93dcf9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/app.1a93dcf9.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/chunk-vendors.957b83b8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/chunk-vendors.957b83b8.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AllView.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Navigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TodoInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TodoInput.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/views/Today.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/AllView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/AllView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/AllView2.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +145,8 @@
       <workItem from="1620832355975" duration="383000" />
       <workItem from="1620882507264" duration="27272000" />
       <workItem from="1621009489166" duration="5138000" />
-      <workItem from="1621049970388" duration="23720000" />
+      <workItem from="1621049970388" duration="31494000" />
+      <workItem from="1621257888044" duration="1994000" />
     </task>
     <servers />
   </component>
@@ -200,10 +180,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/src/views/AllView2.vue</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/backend/models/todos.py</url>
           <option name="timeStamp" value="4" />
@@ -212,6 +188,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1621178895418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1621266477941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>

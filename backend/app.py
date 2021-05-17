@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template, jsonify
-import json
 from models.todos import Todo
 from flask_restful import Api, Resource
 from flask_cors import CORS
@@ -52,6 +51,8 @@ class TodoApp(Resource):
         req = request.json
         title = req['title']
         due_date = req['due']
+        if not due_date:
+            due_date = datetime.datetime.now().strftime('%Y-%m-%d')
         new_todo = Todo.create(
             title=title,
             due_date=datetime.datetime.strptime(due_date, '%Y-%m-%d'))

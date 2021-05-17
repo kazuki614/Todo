@@ -34,9 +34,9 @@ export default {
     return {
       value: true,
       items: [
-        { link: '/', icon: 'mdi-home', title: 'All', id: 1 },
-        { link: '/All2', icon: 'mdi-format-align-left', title: 'Today', id: 2 },
-        { link: '/seven', icon: 'mdi-database-search', title: 'Next 7 Days', id: 3 },
+        { link: '/', icon: 'mdi-format-list-checks', title: 'All', id: 1 },
+        { link: '/today', icon: 'mdi-calendar-today', title: 'Today', id: 2 },
+        { link: '/week', icon: 'mdi-calendar-week', title: 'Next 7 Days', id: 3 },
         { link: '/calendar', icon: 'mdi-calendar', title: 'Calendar', id: 4 }
       ]
     }
