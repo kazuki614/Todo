@@ -16,6 +16,7 @@
           :key="todo.id"
           style="height: 45px"
           v-for="todo in todos"
+          @click="onEditTodo(todo)"
         >
           <v-list-item-content>
             <v-checkbox
@@ -36,11 +37,6 @@
               <v-icon color="grey">mdi-delete</v-icon>
             </v-btn>
           </v-list-item-action>
-          <v-list-item-action>
-            <v-btn icon>
-              <v-icon color="grey">mdi-pencil</v-icon>
-            </v-btn>
-          </v-list-item-action>
         </v-list-item>
       </v-list-group>
     </v-list>
@@ -48,7 +44,7 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapMutations, mapState } from 'vuex'
 
 export default {
   props: {
@@ -58,13 +54,20 @@ export default {
   },
   methods: {
     ...mapActions(['deleteTodo', 'toComplete', 'toIncomplete']),
-    changeStatus (item) {
-      if (item.status === 0) {
-        this.toComplete({ item: item })
+    ...mapMutations(['setEditTodo']),
+    changeStatus (todo) {
+      if (todo.status === 0) {
+        this.toComplete({ item: todo })
       } else {
-        this.toIncomplete({ item: item })
+        this.toIncomplete({ item: todo })
       }
+    },
+    onEditTodo (todo) {
+      this.$store.commit('setEditTodo', { todo: todo })
     }
+  },
+  computed: {
+    ...mapState(['editTodo'])
   }
 }
 </script>

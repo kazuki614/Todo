@@ -8,11 +8,11 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     todos: [],
+    editTodo: [],
     drawer: null
   },
   getters: {
     doingTodos: state => {
-      console.log(state.todos)
       return state.todos.filter((todo) => todo.status === 0)
     },
     doneTodos: state => {
@@ -44,8 +44,11 @@ export default new Vuex.Store({
         }
       })
     },
-    setDrawer (state, payload) {
+    setDrawer (state, { payload }) {
       state.drawer = payload
+    },
+    setEditTodo (state, { todo }) {
+      state.editTodo = todo
     }
   },
   actions: {

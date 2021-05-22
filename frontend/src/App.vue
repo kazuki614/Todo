@@ -2,10 +2,12 @@
   <v-app id="inspire">
     <AppBar/>
     <Navigation/>
-    <v-main>
-      <router-view style="padding-top: 55px">
-      </router-view>
-    </v-main>
+      <v-main>
+        <v-container fluid style="height: 100%">
+          <router-view style="padding-top: 40px">
+          </router-view>
+        </v-container>
+      </v-main>
   </v-app>
 </template>
 
