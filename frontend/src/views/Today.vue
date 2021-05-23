@@ -1,6 +1,8 @@
 <template>
-  <div style="padding: 30px">
-    <v-row>
+  <div style="padding: 20px; height: 100%">
+    <v-row
+      style="height: 100%"
+    >
       <v-col
         cols="12"
         md="8"
@@ -22,10 +24,24 @@
           status-name="DONE"
         ></List>
       </v-col>
+      <v-divider vertical></v-divider>
+      <!-- EditView -->
       <v-col
         cols="12"
         md="4"
-      ></v-col>
+        v-if="Boolean(Object.keys(editTodo).length)"
+      >
+        <EditField></EditField>
+      </v-col>
+      <!-- Non select case -->
+      <v-col
+        cols="12"
+        sm="4"
+        v-else
+        style="height: 100%"
+      >
+        <NotSelect/>
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -35,14 +51,18 @@ import { mapState } from 'vuex'
 import store from '../store/index'
 import TodoInput from '../components/TodoInput'
 import List from '../components/List'
+import EditField from '../components/EditField'
+import NotSelect from '../components/NotSelect'
 
 export default {
   components: {
     TodoInput,
-    List
+    List,
+    EditField,
+    NotSelect
   },
   computed: {
-    ...mapState(['todos']),
+    ...mapState(['todos', 'editTodo']),
     doingTodos () {
       const now = new Date()
       return store.getters.doingTodos.filter((todo) => {

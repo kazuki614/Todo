@@ -12,7 +12,6 @@
           append-icon="mdi-calendar"
           @keydown.enter="createTodo({ item: {title: titleName, due: dueDate} })"
           @click:append="viewCalendar"
-          rounded
           solo
         ></v-text-field>
         <v-dialog
@@ -51,6 +50,7 @@
       >
        <v-btn
          fab
+         small
          dark
          color="indigo"
          @click="createTodo({ item: {title: titleName, due: dueDate} })"

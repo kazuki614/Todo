@@ -1,14 +1,11 @@
 <template>
   <div
-    style="padding: 20px; height: 100%"
-  >
+    style="padding: 20px; height: 100%">
     <v-row
-      style="height: 100%"
-    >
+      style="height: 100%">
       <v-col
         cols="12"
-        md="8"
-      >
+        sm="8">
         <TodoInput
           :title-name="title"
           :due-date="date"
@@ -30,84 +27,39 @@
       <!-- EditView -->
       <v-col
         cols="12"
-        md="4"
+        sm="4"
         v-if="Boolean(Object.keys(editTodo).length)"
         style="padding: 20px"
       >
-        <v-row>
-          <v-col
-            cols="12"
-            md="1"
-          >
-            <v-checkbox
-              :input-value="Boolean(editTodo.status)"
-              @change="changeStatus(editTodo)"
-              hide-details
-            ></v-checkbox>
-          </v-col>
-          <v-col
-            cols="12"
-            md="11"
-            id="date_picker"
-          >
-            <EditDate
-              :edit-date="editTodo.due"
-              :menu="menu"
-            ></EditDate>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col
-            cols="12"
-            md="10"
-          >
-            <EditTextField/>
-          </v-col>
-          <v-col
-            cols="12"
-            md="1"
-          >
-            <UpdateButton/>
-          </v-col>
-        </v-row>
+        <EditField></EditField>
       </v-col>
       <!-- Non select case -->
       <v-col
         cols="12"
-        md="4"
+        sm="4"
         v-else
+        style="height: 100%"
       >
-        <v-row
-          justify="center"
-          align-content="center"
-        >
-          <v-col
-            cols="3"
-          >
-            <h1>Hello, World</h1>
-          </v-col>
-        </v-row>
+        <NotSelect/>
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapState } from 'vuex'
 import store from '../store/index'
 import TodoInput from '../components/TodoInput'
 import List from '../components/List'
-import EditTextField from '../components/EditTextField'
-import EditDate from '../components/EditDate'
-import UpdateButton from '../components/UpdateButton'
+import EditField from '../components/EditField'
+import NotSelect from '../components/NotSelect'
 
 export default {
   components: {
     TodoInput,
     List,
-    EditDate,
-    EditTextField,
-    UpdateButton
+    EditField,
+    NotSelect
   },
   computed: {
     ...mapState(['todos', 'editTodo']),
@@ -126,15 +78,7 @@ export default {
     selected: [],
     title: '',
     date: '',
-    view: false,
-    menu: false
-  }),
-  methods: {
-    ...mapActions(['updateTodo']),
-    changeStatus (todo) {
-      const status = Boolean(todo.status)
-      todo.status = Number(!status)
-    }
-  }
+    view: false
+  })
 }
 </script>

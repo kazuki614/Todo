@@ -2,6 +2,7 @@
   <v-btn
    fab
    dark
+   small
    color="indigo"
    @click="updateTodo({item: editTodo})"
   >
