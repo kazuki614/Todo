@@ -17,12 +17,6 @@ export default new Vuex.Store({
     },
     doneTodos: state => {
       return state.todos.filter((todo) => todo.status === 1)
-    },
-    allTodos: state => {
-      return {
-        DOING: state.todos.filter((todo) => todo.status === 0),
-        DONE: state.todos.filter((todo) => todo.status === 1)
-      }
     }
   },
   mutations: {
@@ -55,6 +49,9 @@ export default new Vuex.Store({
     },
     setEditTodo (state, { todo }) {
       state.editTodo = todo
+    },
+    setDefaultEditTodo (state) {
+      state.editTodo = ''
     }
   },
   actions: {

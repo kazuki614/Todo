@@ -22,8 +22,24 @@
         ></EditDate>
       </v-col>
     </v-row>
-    <EditTextField/>
+    <v-divider></v-divider>
+    <v-row>
+      <v-col
+        cols="12"
+        sm="11"
+      >
+        <EditTextField/>
+      </v-col>
+      <v-col
+        cols="12"
+        sm="1"
+        style="padding-top: 20px"
+      >
+        <UpdateButton></UpdateButton>
+      </v-col>
+    </v-row>
     <v-textarea
+      v-model="editTodo.description"
       rows="20"
       outlined
       flat
@@ -35,13 +51,15 @@
 <script>
 import EditDate from './EditDate'
 import EditTextField from './EditTextField'
+import UpdateButton from './UpdateButton'
 import { mapActions, mapState } from 'vuex'
 
 export default {
   name: 'EditField',
   components: {
     EditDate,
-    EditTextField
+    EditTextField,
+    UpdateButton
   },
   computed: {
     ...mapState(['editTodo'])

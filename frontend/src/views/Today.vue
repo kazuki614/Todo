@@ -29,18 +29,13 @@
       <v-col
         cols="12"
         md="4"
-        v-if="Boolean(Object.keys(editTodo).length)"
       >
-        <EditField></EditField>
-      </v-col>
-      <!-- Non select case -->
-      <v-col
-        cols="12"
-        sm="4"
-        v-else
-        style="height: 100%"
-      >
-        <NotSelect/>
+        <EditForm
+          v-if="Boolean(Object.keys(editTodo).length)"
+        ></EditForm>
+        <NotSelect
+          v-else
+        ></NotSelect>
       </v-col>
     </v-row>
   </div>
@@ -51,14 +46,14 @@ import { mapState } from 'vuex'
 import store from '../store/index'
 import TodoInput from '../components/TodoInput'
 import List from '../components/List'
-import EditField from '../components/EditField'
+import EditForm from '../components/EditForm'
 import NotSelect from '../components/NotSelect'
 
 export default {
   components: {
     TodoInput,
     List,
-    EditField,
+    EditForm,
     NotSelect
   },
   computed: {

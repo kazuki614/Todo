@@ -33,11 +33,13 @@ class TodoApp(Resource):
         todo_id = req['id']
         title = req['title']
         due = datetime.datetime.strptime(req['due'], '%Y-%m-%d')
+        description = req['description']
         status = req['status']
         Todo.update(
             todo_id=todo_id,
             title=title,
             due_date=due,
+            description=description,
             status=status
         )
         return jsonify({'message': 'Update Succeeded'})
@@ -63,6 +65,3 @@ api.add_resource(TodoApp, '/api/')
 
 if __name__ == '__main__':
     app.run(port=settings.web_port)
-    # Todo.create(title='model', due_date=datetime.datetime.strptime('2021-05-14', '%Y-%m-%d'))
-    # Todo.create(title='model2', due_date=datetime.datetime.strptime('2021-05-14', '%Y-%m-%d'))
-    # Todo.create(title='model3', due_date=datetime.datetime.strptime('2021-05-14', '%Y-%m-%d'))

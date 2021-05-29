@@ -10,12 +10,14 @@ class BaseToDo(object):
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(Text)
     due_date = Column(DateTime, nullable=False, default=datetime.datetime.now())
+    description = Column(Text)
     status = Column(Integer)
 
     @classmethod
     def create(cls, title: str, due_date: datetime.datetime) -> dict:
         todo = cls(title=title,
                    due_date=due_date,
+                   description='',
                    status=0)
         with session_scope() as session:
             session.add(todo)
@@ -44,17 +46,19 @@ class BaseToDo(object):
                 'id': todo.id,
                 'title': todo.title,
                 'due': todo.due_date.strftime('%Y-%m-%d'),
+                'description': todo.description,
                 'status': todo.status
             }
             result.append(df)
         return result
 
     @classmethod
-    def update(cls, todo_id: int, title: str, due_date, status: int) -> bool:
+    def update(cls, todo_id: int, title: str, due_date, description: str, status: int) -> bool:
         with session_scope() as session:
             todo = session.query(cls).filter(cls.id == todo_id).first()
             todo.title = title
             todo.due_date = due_date
+            todo.description = description
             todo.status = status
         return True
 

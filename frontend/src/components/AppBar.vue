@@ -12,7 +12,7 @@
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </v-app-bar-nav-icon>
     <v-toolbar-title
-    >TODO app
+    >TODO
     </v-toolbar-title>
   </v-app-bar>
 </template>
