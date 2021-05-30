@@ -14,14 +14,8 @@
         ></TodoInput>
         <List
           :selected="selected"
-          :todos="doingTodos"
-          status-name="DOING"
-        ></List>
-        <v-divider></v-divider>
-        <List
-          :selected="doneTodos"
-          :todos="doneTodos"
-          status-name="DONE"
+          :doing-todos="doingTodos"
+          :done-todos="doneTodos"
         ></List>
       </v-col>
       <v-divider vertical></v-divider>

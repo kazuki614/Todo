@@ -3,15 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d0225d00-5332-49d1-81c5-836dd0b4e56c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/todos.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/todos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/AppBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/EditField.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/List2.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NotSelect.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NotSelect.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/UpdateButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UpdateButton.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/MaterialIcons-Regular.2a61b00f.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/MaterialIcons-Regular.51cf1d64.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/MaterialIcons-Regular.703cf8f2.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/MaterialIcons-Regular.84a37de8.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/materialdesignicons-webfont.147e3378.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/materialdesignicons-webfont.174c02fc.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/materialdesignicons-webfont.64d4cf64.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/static/fonts/materialdesignicons-webfont.7a44ea19.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/List.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/AllView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/AllView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Today.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Today.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/views/Week.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/Week.vue" afterDir="false" />
@@ -152,7 +154,7 @@
       <workItem from="1621257888044" duration="15015000" />
       <workItem from="1621389554666" duration="2082000" />
       <workItem from="1621412289454" duration="31315000" />
-      <workItem from="1622213000085" duration="1183000" />
+      <workItem from="1622213000085" duration="5835000" />
     </task>
     <servers />
   </component>
@@ -194,6 +196,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1622270877868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/todo$app.coverage" NAME="app Coverage Results" MODIFIED="1622387000303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
